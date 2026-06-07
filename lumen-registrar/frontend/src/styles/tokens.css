@@ -1,0 +1,76 @@
+:root {
+  /* Surfaces */
+  --color-canvas: #f7f8fa;
+  --color-surface: #ffffff;
+  --color-surface-sunken: #fbfcfd;
+
+  /* Ink */
+  --color-ink: #1a2332;
+  --color-ink-secondary: #5b6473;
+  --color-ink-muted: #8a93a3;
+
+  /* Brand — academic indigo */
+  --color-primary: #2d3a8c;
+  --color-primary-hover: #243072;
+  --color-primary-tint: #ebedf8;
+  --color-primary-tint-strong: #d9ddf2;
+
+  /* Accent — registrar teal */
+  --color-accent: #0e8c8c;
+  --color-accent-tint: #e0f1f1;
+
+  /* Semantic */
+  --color-success: #1e8e5a;
+  --color-success-tint: #e3f3ec;
+  --color-warning: #b5811e;
+  --color-warning-tint: #f6efde;
+  --color-danger: #c0392b;
+  --color-danger-tint: #f8e7e4;
+  --color-info: #2d6bb5;
+  --color-info-tint: #e6eef8;
+
+  /* Lines */
+  --color-border: #e3e7ee;
+  --color-border-strong: #ced4df;
+
+  /* Typography */
+  --font-ui: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-display: "Source Serif 4", Georgia, "Times New Roman", serif;
+
+  --text-h1: 28px;
+  --text-h2: 20px;
+  --text-h3: 16px;
+  --text-body: 14px;
+  --text-cell: 13px;
+  --text-caption: 12px;
+  --text-label: 11px;
+
+  /* Spacing — 8px rhythm */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  /* Radius */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+
+  /* Elevation — single soft level */
+  --shadow-panel: 0 1px 2px rgba(26, 35, 50, 0.04),
+    0 4px 16px rgba(26, 35, 50, 0.06);
+  --shadow-popover: 0 8px 28px rgba(26, 35, 50, 0.14);
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 120ms;
+  --duration-normal: 200ms;
+
+  --sidebar-w: 232px;
+  --sidebar-w-collapsed: 60px;
+  --topbar-h: 56px;
+}

@@ -1,0 +1,110 @@
+.roster-toolbar {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.roster-search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  min-width: 240px;
+  max-width: 420px;
+}
+.roster-search svg {
+  position: absolute;
+  left: 11px;
+  color: var(--color-ink-muted);
+  pointer-events: none;
+}
+.roster-search__input {
+  width: 100%;
+  height: 36px;
+  padding: 0 32px 0 32px;
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  font-size: var(--text-body);
+  color: var(--color-ink);
+}
+.roster-search__input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px var(--color-primary-tint);
+}
+.roster-search__clear {
+  position: absolute;
+  right: 8px;
+  border: none;
+  background: transparent;
+  font-size: 17px;
+  color: var(--color-ink-muted);
+  width: 22px;
+  height: 22px;
+  border-radius: var(--radius-sm);
+}
+.roster-search__clear:hover {
+  background: var(--color-canvas);
+  color: var(--color-ink);
+}
+
+.roster-filter {
+  width: 130px;
+}
+
+.roster-syncing {
+  font-size: var(--text-caption);
+  color: var(--color-ink-muted);
+  margin-left: auto;
+}
+
+.roster-panel {
+  overflow: hidden;
+}
+
+.roster-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-3) var(--space-4);
+  border-top: 1px solid var(--color-border);
+  background: var(--color-surface-sunken);
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+.roster-foot__left {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+.roster-pagesize {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--text-caption);
+  color: var(--color-ink-secondary);
+}
+.roster-pagesize .select-wrap {
+  width: 64px;
+}
+.roster-pagesize .input {
+  height: 28px;
+}
+.roster-count {
+  font-size: var(--text-caption);
+  color: var(--color-ink-muted);
+}
+
+.roster-pager {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+.roster-pageno {
+  font-size: var(--text-caption);
+  color: var(--color-ink-secondary);
+  font-weight: 550;
+}

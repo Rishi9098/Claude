@@ -1,0 +1,36 @@
+.courses-panel {
+  overflow: hidden;
+}
+.courses-table__code {
+  display: inline-block;
+  font-size: var(--text-label);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--color-accent);
+  background: var(--color-accent-tint);
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+}
+.courses-table__name {
+  font-weight: 550;
+  color: var(--color-ink);
+}
+.courses-table__count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 26px;
+  padding: 1px 7px;
+  font-weight: 600;
+  color: var(--color-primary);
+  background: var(--color-primary-tint);
+  border-radius: var(--radius-sm);
+}
+.courses-foot {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  margin: var(--space-4) 0 0;
+  font-size: var(--text-caption);
+  color: var(--color-ink-muted);
+}

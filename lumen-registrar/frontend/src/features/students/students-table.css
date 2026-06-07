@@ -1,0 +1,154 @@
+.dtable-scroll {
+  overflow-x: auto;
+}
+
+.dtable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--text-cell);
+}
+
+.dtable thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: var(--color-surface-sunken);
+  text-align: left;
+  font-size: var(--text-label);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-ink-muted);
+  padding: 0 var(--space-4);
+  height: 38px;
+  border-bottom: 1px solid var(--color-border);
+  white-space: nowrap;
+}
+.dtable th.ralign {
+  text-align: right;
+}
+
+.dtable__sort {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border: none;
+  background: none;
+  font: inherit;
+  text-transform: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+  padding: 0;
+}
+.dtable__sort:hover {
+  color: var(--color-ink-secondary);
+}
+.dtable__sort.is-active {
+  color: var(--color-primary);
+}
+.dtable__caret {
+  display: inline-flex;
+  opacity: 0;
+  transition: opacity var(--duration-fast), transform var(--duration-fast);
+}
+.dtable__sort:hover .dtable__caret {
+  opacity: 0.5;
+}
+.dtable__caret[data-dir="asc"],
+.dtable__caret[data-dir="desc"] {
+  opacity: 1;
+}
+.dtable__caret[data-dir="desc"] {
+  transform: rotate(180deg);
+}
+
+.dtable tbody td {
+  padding: 0 var(--space-4);
+  height: 52px;
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-ink);
+  vertical-align: middle;
+}
+.dtable td.ralign {
+  text-align: right;
+}
+.dtable__muted {
+  color: var(--color-ink-muted);
+}
+
+.dtable__row {
+  cursor: pointer;
+  position: relative;
+  transition: background var(--duration-fast) var(--ease-out);
+}
+.dtable__row:hover {
+  background: var(--color-primary-tint);
+}
+.dtable__row:hover td:first-child {
+  box-shadow: inset 3px 0 0 var(--color-accent);
+}
+.dtable__row:focus-visible {
+  outline: none;
+  background: var(--color-primary-tint);
+}
+
+.dtable__student {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: var(--radius-md);
+  background: var(--color-primary-tint-strong);
+  color: var(--color-primary);
+  font-size: var(--text-label);
+  font-weight: 600;
+  flex-shrink: 0;
+}
+.dtable__student-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+  min-width: 0;
+}
+.dtable__name {
+  font-weight: 550;
+  color: var(--color-ink);
+}
+.dtable__email {
+  font-size: var(--text-caption);
+  color: var(--color-ink-muted);
+}
+
+.dtable__program {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+}
+.dtable__code {
+  font-weight: 600;
+  font-size: var(--text-caption);
+  color: var(--color-ink-secondary);
+  font-variant-numeric: tabular-nums;
+}
+.dtable__course {
+  font-size: var(--text-caption);
+  color: var(--color-ink-muted);
+}
+
+.dtable__gpa {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  justify-content: flex-end;
+}
+.dtable__gpa .tnum {
+  font-weight: 550;
+  min-width: 32px;
+  text-align: right;
+}

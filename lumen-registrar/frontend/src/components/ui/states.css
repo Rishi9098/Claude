@@ -1,0 +1,71 @@
+.skeleton {
+  display: inline-block;
+  background: linear-gradient(
+    90deg,
+    #eef0f4 0%,
+    #f5f6f9 40%,
+    #eef0f4 80%
+  );
+  background-size: 480px 100%;
+  animation: shimmer 1.3s linear infinite;
+}
+
+.state-skel-table {
+  padding: var(--space-2) 0;
+}
+.state-skel-row {
+  display: grid;
+  grid-template-columns: 2.4fr 1fr 1.2fr 1fr 0.8fr;
+  gap: var(--space-4);
+  align-items: center;
+  height: 46px;
+  padding: 0 var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.state-empty,
+.state-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: var(--space-7) var(--space-5);
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+.state-empty__mark,
+.state-error__mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--space-4);
+}
+.state-empty__mark {
+  background: var(--color-primary-tint);
+  color: var(--color-primary);
+}
+.state-error__mark {
+  background: var(--color-danger-tint);
+  color: var(--color-danger);
+}
+
+.state-empty__title,
+.state-error__title {
+  font-size: var(--text-h3);
+  font-weight: 600;
+  margin-bottom: var(--space-2);
+}
+.state-empty__msg,
+.state-error__msg {
+  font-size: var(--text-body);
+  color: var(--color-ink-secondary);
+  line-height: 1.5;
+  margin: 0 0 var(--space-4);
+}
+.state-empty__action {
+  margin-top: var(--space-1);
+}

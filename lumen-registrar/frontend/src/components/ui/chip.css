@@ -1,0 +1,72 @@
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: var(--text-label);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 2px 7px;
+  border-radius: var(--radius-md);
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.chip__dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.chip--success {
+  background: var(--color-success-tint);
+  color: var(--color-success);
+}
+.chip--warning {
+  background: var(--color-warning-tint);
+  color: var(--color-warning);
+}
+.chip--danger {
+  background: var(--color-danger-tint);
+  color: var(--color-danger);
+}
+.chip--info {
+  background: var(--color-info-tint);
+  color: var(--color-info);
+}
+.chip--primary {
+  background: var(--color-primary-tint);
+  color: var(--color-primary);
+}
+.chip--muted {
+  background: #eef0f4;
+  color: var(--color-ink-secondary);
+}
+
+/* Grade chips — small, saturated text on tint */
+.chip--grade {
+  font-variant-numeric: tabular-nums;
+  min-width: 28px;
+  justify-content: center;
+}
+.chip--grade-a {
+  background: var(--color-success-tint);
+  color: var(--color-success);
+}
+.chip--grade-b {
+  background: var(--color-info-tint);
+  color: var(--color-info);
+}
+.chip--grade-c {
+  background: var(--color-warning-tint);
+  color: var(--color-warning);
+}
+.chip--grade-d {
+  background: #f6e8dc;
+  color: #a8581a;
+}
+.chip--grade-f {
+  background: var(--color-danger-tint);
+  color: var(--color-danger);
+}

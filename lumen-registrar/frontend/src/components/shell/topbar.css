@@ -1,0 +1,111 @@
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--topbar-h);
+  padding: 0 var(--space-5);
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.topbar__left,
+.topbar__right {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.topbar__menu {
+  display: none;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  width: 32px;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-ink-secondary);
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--text-body);
+}
+.breadcrumb__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.breadcrumb__sep {
+  color: var(--color-border-strong);
+}
+.breadcrumb__link {
+  border: none;
+  background: none;
+  color: var(--color-ink-muted);
+  padding: 2px 4px;
+  border-radius: var(--radius-sm);
+}
+.breadcrumb__link:hover {
+  color: var(--color-ink);
+  background: var(--color-canvas);
+}
+.breadcrumb__current {
+  color: var(--color-ink);
+  font-weight: 550;
+}
+
+.topbar__search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 34px;
+  width: 280px;
+  padding: 0 10px;
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-md);
+  background: var(--color-surface-sunken);
+  color: var(--color-ink-muted);
+  font-size: var(--text-body);
+  transition: border-color var(--duration-fast) var(--ease-out);
+}
+.topbar__search span {
+  flex: 1;
+  text-align: left;
+}
+.topbar__search:hover {
+  border-color: var(--color-ink-muted);
+}
+.topbar__kbd,
+kbd.topbar__kbd {
+  font-family: var(--font-ui);
+  font-size: var(--text-label);
+  font-weight: 600;
+  color: var(--color-ink-secondary);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 1px 5px;
+}
+
+@media (max-width: 1024px) {
+  .topbar__menu {
+    display: inline-flex;
+  }
+}
+@media (max-width: 768px) {
+  .topbar {
+    padding: 0 var(--space-4);
+  }
+  .topbar__search span {
+    display: none;
+  }
+  .topbar__search {
+    width: auto;
+  }
+}
